@@ -18,7 +18,7 @@ def breast_cancer(party_id=None, train: bool = True):
     if train:
         if party_id:
             if party_id == 1:
-                return x_train[:, :15], None
+                return x_train[:, :15], _
             else:
                 return x_train[:, 15:], y_train
         else:
@@ -96,7 +96,5 @@ if __name__ == "__main__":
         user_specified_num_returns=2,
     )(W_, b_, x1_, x2_, y_, epochs=10, learning_rate=1e-2)
     X_test, y_test = breast_cancer(train=False)
-    W_ = sf.reveal(W_)
-    b_ = sf.reveal(b_)
     auc = validate_model(sf.reveal(W_), sf.reveal(b_), X_test, y_test)
     print(f"auc={auc}")
