@@ -74,7 +74,6 @@ if __name__ == "__main__":
 
     alice, bob = sf.PYU("alice"), sf.PYU("bob")
     spu = sf.SPU(sf.utils.testing.cluster_def(["alice", "bob"]))
-    # print(alice(breast_cancer)(party_id=1))
     x1, _ = alice(breast_cancer)(party_id=1)
     x2, y = bob(breast_cancer)(party_id=2)
 
