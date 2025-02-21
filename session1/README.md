@@ -46,9 +46,9 @@ pip install secretflow==1.6.1b0  // 建议指定版本,隐语的文档目前还�
 
 ## 逻辑回归
 
-按照教程,同学们很轻松地就可以得到 session1_lr.py 中的代码,我们来运行一下:
+按照教程,同学们请补全 session1_lr.py 中的代码，接着来运行一下:
 ```cmd
-python session1_lr.py  // 这里的代码有一些bug,请自行修复
+python session1_lr.py  // 这里教程的代码存在bug,请自行修复
 ```
 结果如下:
 
@@ -56,9 +56,10 @@ python session1_lr.py  // 这里的代码有一些bug,请自行修复
 
 ## 使用SPU进行逻辑回归
 
-按照教程同学们很简单就可以得到相应代码,试着运行一下:
+接着，我们需要使用SPU进行逻辑回归。请同学们按照教程补全session1_lr_spu.py,并试着运行:
 ```cmd
-python session1_lr_spu.py
+python session1_lr_spu.py  // 教程中仍存在一些小问题，请自行修正
 ```
-好像报错了.请同学们自行调整其中的bug,如果代码正确的话输入结果如下:
+如果代码正确的话输入结果如下:
+
 ![](https://raw.githubusercontent.com/Rainysponge/Figurebed/main/img/20250217163337.png)
