@@ -48,7 +48,7 @@ fed_model = FLModel(
 
 ## 尝试实现联邦学习范式（选做）
 
-对于这一部分，建议同学们可以参考隐语库中 [PR#1587](https://github.com/secretflow/secretflow/pull/1587)进行尝试.当然考虑到难度较高，同学们也可以寻找一个隐语库中未能通过test的PR（可以是已关闭的），解释为什么报错并加以修改并运行。这里以[PR#1580](https://github.com/secretflow/secretflow/pull/1580)为例，我们可以查看器代码，不难发现，在fed_dyn.py文件中FedDYN类的初始化函数有误，应该添加super().__init__(...)相关代码，而后参考其他实现比如secretflow/secretflow_fl/ml/nn/fl/backend/torch/strategy/fed_gen.py进行修正和运行。此外，同学们也可以查看[隐语开源共建计划 OSCP Phase4](https://studio.secretflow.com/activity/fy3n4tddfe3xteq/detail)中和联邦学习相关的任务，选取一个加以实现与完成。
+对于这一部分，建议同学们可以参考隐语库中 [PR#1587](https://github.com/secretflow/secretflow/pull/1587)进行尝试.当然考虑到难度较高，同学们也可以寻找一个隐语库中未能通过test的PR（可以是已关闭的），解释为什么报错并加以修改并运行。这里以[PR#1580](https://github.com/secretflow/secretflow/pull/1580)为例，我们可以查看器代码，不难发现，在fed_dyn.py文件中FedDYN类的初始化函数有误，应该添加 super().__init__(...) 相关代码，然后参考其他实现，比如secretflow/secretflow_fl/ml/nn/fl/backend/torch/strategy/fed_gen.py进行修正和运行。此外，同学们也可以查看隐语开源共建计划 OSCP 中和联邦学习相关的任务，选取一个加以实现与完成。
 
 
 
