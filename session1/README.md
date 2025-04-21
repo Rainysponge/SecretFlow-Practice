@@ -23,7 +23,7 @@ pip install -U secretflow-lite  // 轻量版本
 
 当然也可以直接通过 requirements.txt 进行安装:
 ```cmd
-pip -r requirements.txt
+pip install -r requirements.txt
 ```
 
 在完成安装后,检查安装是否有效.
