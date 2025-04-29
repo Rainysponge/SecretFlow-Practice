@@ -1,4 +1,4 @@
-# 基于SecrectFlow进行联邦学习
+# 基于SecrectFlow进行联邦学习以完成图像分类
 
 在本实验中,同学们需要使用隐语的ml.nn.fl模块（新版本为secretflow_fl）完成一个分类问题.同学们可以按照下述流程完成实验:
 - 熟悉联邦学习的基础过程和相关变体范式;
@@ -44,7 +44,7 @@ fed_model = FLModel(
     ...
 )
 ```
-具体可以查看 secretflow/ml/nn/fl/backend/torch/strategy/ 中相关范式的实现 ，希望同学们选取2-3个范式进行实验，并记录结果。如果想尝试更多的范式，建议更新隐语版本至最新，并修改import即可，先前的fl相关代码全部被转移至secretflow_fl中了。
+具体可以查看 secretflow/ml/nn/fl/backend/torch/strategy/ 中相关范式的实现 ，希望同学们可以选取2-3个范式进行实验，并记录结果。如果想尝试更多的范式，建议更新隐语版本至最新，并修改import即可，先前的fl相关代码全部被转移至secretflow_fl中了。最新版本的隐语支持更多的联邦学习范式。
 
 ## 尝试实现联邦学习范式（选做）
 

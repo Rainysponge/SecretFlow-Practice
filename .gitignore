@@ -1,3 +1,5 @@
 *_real.py
 *.log
 *.pdf
+*.pkl
+*/__pycache__/
