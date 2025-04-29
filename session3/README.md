@@ -24,7 +24,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 这里请各位同学根据**正确版本号**对应的文档可以尝试补全文件 SL_only.py，同学们可以使用tensorflow（直接按照教程，可能存在问题需要手动修正）也可以使用pytorch，此处也给出了pytorch的相关模型实现，详见 models.py。
 
-数据划分要求为，讲数据的前4个特征和数据标签有Alice持有，而其余特征有Bob持有。
+数据划分要求为，数据的前4个特征和数据标签有Alice持有，而其余特征有Bob持有。
 
 ```cmd
 cd session3
@@ -39,12 +39,12 @@ python -m SL_only
 
 在实现用可能遇到数据类型错误，这里可以参考 [lia attacks](https://github.com/secretflow/secretflow/blob/main/tests/ml/nn/sl/attack/test_torch_direct_based_scoring_lia.py) 中关于SLModel和相关数据的使用。
 
-这一步同学可以尝试调整下学习率，现在是1e-3，可以将其调大调小观察 AUC 和 Loss 等指标的变化。
+进一步，同学们可以尝试调整下学习率，现在是1e-3，可以将其调大调小观察 AUC 和 Loss 等指标的变化。
 
 
 ## 仅Alice参与训练
 
-同学们可以试着修正 SL_only.py 中的内容，让其变成只有Alice参与训练的情况，并尝试运行。具体来说就是删除其中关于Bob相关的所有内容，并将其保存为 SL_single.py。
+同学们需要试着修正 SL_only.py 中的内容，让其变成只有Alice参与训练的情况，并尝试运行。具体来说就是删除其中关于Bob的所有内容，并将其保存为 SL_single.py。
 
 ```cmd
 python -m SL_single
